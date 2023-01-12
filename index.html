@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto1.css">
+    <title>Projeto1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="projeto1.js" defer></script>
+</head>
+<body onload="getTarefas()">
+  <div id="divPai">
+    <div id="colunaRoxa"></div>
+    <div id="colunaRoxoClaro"></div>
+    <div id="img"><img href="logo arnia.png">
+      <div class="icone" ><img src="clipboard.svg"/>
+        <h1 id="h1" ><u>Gerenciador de Tarefas</u></h1>
+        <button onclick="openModal()"  class="containerButton" >
+          <img class="iconeImg" src="iconeAdd.svg">
+          <span class="textButton">Adicionar Nova Tarefa:</span>
+        </button>
+        <div id="containerTable">
+          <table id="tab" class="table table-striped table-borderless table-hover">
+            <thead id="styletext" class="table-dark">
+            <tr>
+            <th>Núm</th>
+            <th>Descrição</th>
+            <th>Data de Entrega</th>
+            <th>Status</th>
+            <th>Ação</th>
+            </tr>
+            </thead>
+            <tbody id="tarefas" >
+            </tbody>
+          </table>
+        </div>
+        <div id="modal" class="modal">
+          <div class="modalContent">
+            <img class="close" id="closeButton" src="x.svg"/>
+            <h3 id="h3"><u>Adicionar Nova Tarefa</u></h3>
+            <br><br>
+            <form id="subscribe" action="/signup" method="post" novalidate >
+            <label class="formLabel">Digite um Número:</label>
+            <br>
+            <input onchange="habilitButton()" id="ordemNumerica" class="inputMaior" name="ordemNumerica" type="number" min="1"/>
+            <br>
+            <label class="formLabel">Digite uma Descrição:</label>
+            <br>
+            <input maxlength="35" onchange="habilitButton()" id="descrição" class="inputMaior" name="Descrição" class="input"/>
+            <br>
+            <label class="formLabel" >Escolha uma Data:</label>
+            <br>
+            <input onchange="habilitButton()" id="data" class="inputMenorData" name="date" type="date"/>
+            <br>
+            <label class="formLabel" >Escolha um Status:</label>
+            <br>
+            <select onchange="habilitButton()" id="status" class="inputMenorStatus" name="options">
+              <option disabled selected></option>
+              <option class="concluida" value="Concluída">Concluída</option>
+              <option class="emProcesso" value="Em Processo">Em Processo</option>
+              <option class="stopped" value="Stopped">Stopped</option>
+            </select>
+            <button id="buttonLixeira" name="reset" type="reset"><img class="lixeira" src="lixeira.svg"/><h8>Limpar Formulário</h8></button>
+            <button disabled id="salvar" class="salvar" type="submit"><u>Salvar</u></button>
+            </form>
+            <button onclick="closeModal()" class="cancelar">Cancelar</button>         
+          </div>
+        </div>
+      </div>                 
+    </div>
+  </div>   
+<div class="rectangle">&nbsp;</div>
+<input type="checkbox" class="btnDarkMod" id="checkbox"/>
+<label class="label" for="checkbox">
+  <i class="fa-solid fa-moon fa-beat" style="color: #68519D; font-size: 20px;" ></i>
+  <i class="fa-solid fa-sun fa-spin" style="color: #fffb00; font-size: 20px;"></i>
+  <div class="ball"></div>
+</label>
+<div class="containerBuscar">
+  <input id="buscar" type="text" placeholder="Pesquisar tarefa..." class="buscar"/><button id="lupa" class="lupa"><i class="fa-solid fa-magnifying-glass fa-beat" style="color: #000000; font-size: 28px;"></i></button>
+</div>
+<script src="https://kit.fontawesome.com/dfd96c94ad.js" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"
+></script>
+</body>
+</html>
