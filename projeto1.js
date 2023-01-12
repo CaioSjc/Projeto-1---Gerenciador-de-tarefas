@@ -56,13 +56,13 @@ const passandoTarefa = (tarefas) => {
   }
 
 const getTarefas = async () => {  
-  const apiResponse = await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app")
+  const apiResponse = await fetch("https://json-server-heroku-5vxl.vercel.app/")
   const tarefas = await apiResponse.json()
   passandoTarefa(tarefas)
 }
 
 const saveTarefa = async (tarefa) => {
-  await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app", {
+  await fetch("https://https://json-server-heroku-5vxl.vercel.app/", {
       method: "POST",
       headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -112,14 +112,14 @@ const editarTarefa = async (id) => {
 }
 
 const getEditar = async (id) => {  
-  const apiResponse = await fetch(`https://projeto-1-gerenciador-de-tarefas.vercel.app/Tarefa/${id}`)
+  const apiResponse = await fetch(`https://json-server-heroku-5vxl.vercel.app/`)
   let mudarTarefa = await apiResponse.json()
   return mudarTarefa
 }
 
 
 const updateTarefa = async (id, tarefa ) => {
-  await fetch(`https://projeto-1-gerenciador-de-tarefas.vercel.app/Tarefa/${id}`, {
+  await fetch(``, {
       method: "PUT",
       headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -131,7 +131,7 @@ const updateTarefa = async (id, tarefa ) => {
 
 //Apaga tarefa do json.
 const apagarTarefa = async (id) => {
-  await fetch(`https://https://projeto-1-gerenciador-de-tarefas.vercel.app/Tarefa/${id}`, {
+  await fetch(`https://json-server-heroku-5vxl.vercel.app/`, {
       method: 'DELETE'
   })
   getTarefas()
