@@ -56,13 +56,13 @@ const passandoTarefa = (tarefas) => {
   }
 
 const getTarefas = async () => {  
-  const apiResponse = await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app/Tarefa/")
+  const apiResponse = await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app")
   const tarefas = await apiResponse.json()
   passandoTarefa(tarefas)
 }
 
 const saveTarefa = async (tarefa) => {
-  await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app/Tarefa/", {
+  await fetch("https://projeto-1-gerenciador-de-tarefas.vercel.app", {
       method: "POST",
       headers: {
           'Accept': 'application/json, text/plain, */*',
