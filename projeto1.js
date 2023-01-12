@@ -56,13 +56,13 @@ const passandoTarefa = (tarefas) => {
   }
 
 const getTarefas = async () => {  
-  const apiResponse = await fetch("https://projeto-1---gerenciador.herokuapp.com/Tarefas")
+  const apiResponse = await fetch("https://projeto-1---gerenciador.herokuapp.com/")
   const tarefas = await apiResponse.json()
   passandoTarefa(tarefas)
 }
 
 const saveTarefa = async (tarefa) => {
-  await fetch("https://projeto-1---gerenciador.herokuapp.com/Tarefas", {
+  await fetch("https://projeto-1---gerenciador.herokuapp.com/", {
       method: "POST",
       headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -112,14 +112,14 @@ const editarTarefa = async (id) => {
 }
 
 const getEditar = async (id) => {  
-  const apiResponse = await fetch(`https://projeto-1---gerenciador.herokuapp.com/Tarefas/${id}`)
+  const apiResponse = await fetch(`https://projeto-1---gerenciador.herokuapp.com/${id}`)
   let mudarTarefa = await apiResponse.json()
   return mudarTarefa
 }
 
 
 const updateTarefa = async (id, tarefa ) => {
-  await fetch(`https://projeto-1---gerenciador.herokuapp.com/Tarefas/${id}`, {
+  await fetch(`https://projeto-1---gerenciador.herokuapp.com/${id}`, {
       method: "PUT",
       headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -131,7 +131,7 @@ const updateTarefa = async (id, tarefa ) => {
 
 //Apaga tarefa do json.
 const apagarTarefa = async (id) => {
-  await fetch(`https://projeto-1---gerenciador.herokuapp.com/Tarefas/${id}`, {
+  await fetch(`https://projeto-1---gerenciador.herokuapp.com/${id}`, {
       method: 'DELETE'
   })
   getTarefas()
