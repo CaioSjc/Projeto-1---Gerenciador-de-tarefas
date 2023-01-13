@@ -530,11 +530,20 @@ textarea:focus {
 }
 @media (max-width: 512px) {
     .close {
-        margin-left: 42.3vw;
+        margin-left: 58.3vw;
     }
     .modalContent {
-        width: 56vw;
-        margin-left: 19vw;
+        width: 68vw;
+        margin-left: 15vw;
+    }
+    .inputMaior {
+        width: 59vw;
+    }
+    .inputMenorData {
+        width: 38vw;
+    }
+    .inputMenorStatus {
+        width: 38vw;
     }
     #resposta {
         margin-left: -80.4vw;
@@ -554,10 +563,10 @@ textarea:focus {
 }
 @media (max-width: 446px) {
     .close {
-        margin-left: 58.3vw;
+        margin-left: 67.5vw;
     }
     .inputMaior {
-        width: 54vw;
+        width: 62vw;
     }
     .inputMenorData {
         width: 40vw;
@@ -566,15 +575,15 @@ textarea:focus {
         width: 40vw;
     }
     .modalContent {
-        width: 68vw;
+        width: 76.4vw;
+        margin-left: 9vw;
     }
     #h3 {
-        font-size: 15px;
         line-height: 25px;
         margin-left: 7vw;
     }
     .salvar {
-        margin-left: 32vw;
+        margin-left: 45vw;
         margin-top: 6vh;
     }
     #buttonLixeira {
