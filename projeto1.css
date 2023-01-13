@@ -596,7 +596,7 @@ textarea:focus {
     }
     .salvarAnotacao {
         margin-top: 200px;
-        margin-left: 12px;
+        margin-left: 10px;
     } 
     .labelAnota {
         font-size: 11px;
@@ -605,7 +605,7 @@ textarea:focus {
     }
     .containerBuscar {
         margin-top: 50px;
-        margin-left: 12vw;
+        margin-left: 13vw;
     }
 }
 @media (max-width:390px) {
