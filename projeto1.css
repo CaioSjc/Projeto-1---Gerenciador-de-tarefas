@@ -589,6 +589,10 @@ textarea:focus {
     }
     #resposta {
         margin-left: -91.4vw;
+        width: 104vw;
+    }
+    .inputAnota {
+        width: 72vw;
     }
     .salvarAnotacao {
         margin-top: 200px;
