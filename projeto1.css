@@ -553,13 +553,28 @@ textarea:focus {
     }
 }
 @media (max-width: 446px) {
+    .close {
+        margin-left: 58.3vw;
+    }
+    .inputMaior {
+        width: 54vw;
+    }
+    .inputMenorData {
+        width: 40vw;
+    }
+    .inputMenorStatus {
+        width: 40vw;
+    }
+    .salvar {
+        margin-left: 40vw;
+    }
     .modalContent {
         width: 68vw;
     }
     #h3 {
         font-size: 15px;
         line-height: 25px;
-        margin-left: 2vw;
+        margin-left: 7vw;
     }
     .salvar {
         margin-left: 27vw;
