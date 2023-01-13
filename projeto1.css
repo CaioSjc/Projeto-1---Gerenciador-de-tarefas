@@ -600,7 +600,7 @@ textarea:focus {
     }
     .containerBuscar {
         margin-top: 50px;
-        margin-left: 10vw;
+        margin-left: 12vw;
     }
 }
 @media (max-width:390px) {
