@@ -527,6 +527,12 @@ textarea:focus {
         margin-top: -10px;
         line-height: 204px;
     }
+    .inputMenorData {
+        width: 32vw;
+    }
+    .inputMenorStatus {
+        width: 32vw;
+    }
 }
 @media (max-width: 512px) {
     .close {
