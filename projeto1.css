@@ -611,6 +611,10 @@ textarea:focus {
 @media (max-width:390px) {
     #resposta {
         margin-left: -102vw;
+        width: 108vw
+    }
+    .inputAnota {
+        width: 66vw;
     }
 }
 @media (max-width: 345px) {
@@ -694,6 +698,9 @@ textarea:focus {
         font-size: 11px;
         line-height: 204px;
         margin-top: -15px;
+    }
+    .inputAnota {
+        width: 60vw;
     }
 }
 @media (max-width: 300px) {
