@@ -199,9 +199,7 @@ async function  saveAnotacao (itemId) {
   const anota  = document.getElementById(`anotacao-${itemId}`).value
   const buscarAnotacao = await getEditar(itemId)
   updateTarefa(itemId, {anota, ...buscarAnotacao});
-  setTimeout(function() {
-    window.location.reload(1);
-  }, 3000); //  3 segundos
+  getTarefas();
 }
 
 document.getElementById("lupa").addEventListener("click", pesquisar);
