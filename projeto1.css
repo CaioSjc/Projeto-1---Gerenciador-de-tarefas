@@ -553,6 +553,9 @@ textarea:focus {
     }
 }
 @media (max-width: 446px) {
+    .modalContent {
+        width: 68vw;
+    }
     #h3 {
         font-size: 15px;
         line-height: 25px;
@@ -585,7 +588,7 @@ textarea:focus {
     }
     .containerBuscar {
         margin-top: 50px;
-        margin-left: 25vw;
+        margin-left: 18vw;
     }
 }
 @media (max-width:390px) {
