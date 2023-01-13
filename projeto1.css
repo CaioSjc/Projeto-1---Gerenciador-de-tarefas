@@ -588,14 +588,15 @@ textarea:focus {
         margin-top: -650px;
     }
     #resposta {
-        margin-left: -96.4vw;
-        width: 109vw;
+        margin-left: -93.4vw;
+        width: 107vw;
     }
     .inputAnota {
-        width: 72vw;
+        width: 71vw;
     }
     .salvarAnotacao {
         margin-top: 200px;
+        margin-left: 12px;
     } 
     .labelAnota {
         font-size: 11px;
