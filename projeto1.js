@@ -198,7 +198,7 @@ function expandir(itemId) {
 async function  saveAnotacao (itemId) {
   const anota  = document.getElementById(`anotacao-${itemId}`).value
   const buscarAnotacao = await getEditar(itemId)
-  updateTarefa(itemId, {anota, ...buscarAnotacao});
+  await updateTarefa(itemId, {anota, ...buscarAnotacao});
   getTarefas();
 }
 
